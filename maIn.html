@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Property Search - Basic Flex Layout</title>
     <style>
-        /* --- Base Styles --- */
+        
         * {
             box-sizing: border-box;
         }
@@ -24,7 +24,7 @@
             padding: 0 20px;
         }
 
-        /* --- Header --- */
+        
         header {
             background-color: white;
             padding: 15px 0;
@@ -61,7 +61,7 @@
             font-size: 14px;
         }
 
-        /* --- Hero Section --- */
+        
         .hero {
             background-color: #092c4c;
             color: white;
@@ -76,7 +76,7 @@
             padding: 0 10px;
         }
 
-        /* --- Search Box --- */
+        
         .search-box {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 20px;
@@ -124,7 +124,7 @@
             font-size: 16px;
         }
 
-        /* --- Banner --- */
+        
         .banner {
             max-width: 800px;
             margin: 30px auto;
@@ -135,12 +135,12 @@
             border-radius: 5px;
         }
 
-        /* --- Card Section (Flexbox) --- */
+        
         .card-section {
             padding-bottom: 50px;
             display: flex;
-            flex-wrap: wrap; /* Allows items to wrap to next line */
-            gap: 20px; /* Space between items */
+            flex-wrap: wrap; 
+            gap: 20px; 
             justify-content: center;
         }
 
@@ -151,7 +151,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            /* Laptop: Divide by 3, minus the gap space */
+            
             width: calc(33.333% - 20px); 
         }
 
@@ -187,7 +187,7 @@
             font-size: 14px;
         }
 
-        /* --- Footer Styles --- */
+        
         footer {
             background-color: white;
             border-top: 1px solid #ccc;
@@ -231,12 +231,10 @@
         }
 
 
-        /* --- MEDIA QUERIES --- */
         
-        /* TABLET (Max Width 900px) */
         @media (max-width: 900px) {
             .card {
-                /* 2 cards per row */
+                
                 width: calc(50% - 20px); 
             }
 
@@ -246,9 +244,9 @@
             }
         }
 
-        /* PHONE (Max Width 600px) */
+        
         @media (max-width: 600px) {
-            /* Stack everything */
+            
             .card {
                 width: 100%;
             }
@@ -348,7 +346,7 @@
     </div>
 
     <div class="container card-section">
-        <!-- Card 1 -->
+        
         <div class="card">
             <img src="https://placehold.co/300x150/dbeafe/1e3a8a?text=Home+Valuation" alt="Valuation">
             <div class="card-body">
@@ -358,7 +356,7 @@
             </div>
         </div>
 
-        <!-- Card 2 -->
+        
         <div class="card">
             <img src="https://placehold.co/300x150/d1fae5/065f46?text=Energy+Tips" alt="Energy">
             <div class="card-body">

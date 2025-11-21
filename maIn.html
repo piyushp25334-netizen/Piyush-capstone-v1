@@ -40,7 +40,8 @@
         .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #092c4c;
+            /* Changed color for a slightly fresher feel */
+            color: #0d47a1; 
             text-decoration: none;
         }
 
@@ -52,10 +53,11 @@
         }
 
         .btn-signin {
-            border: 1px solid #00bf8a;
+            /* Changed button color */
+            border: 1px solid #1de9b6;
             padding: 5px 15px;
             border-radius: 15px;
-            color: #092c4c;
+            color: #0d47a1;
             margin-left: 15px;
             text-decoration: none;
             font-size: 14px;
@@ -63,7 +65,8 @@
 
         
         .hero {
-            background-color: #092c4c;
+            /* Changed background color */
+            background-color: #0d47a1;
             color: white;
             text-align: center;
             padding: 60px 0;
@@ -96,7 +99,8 @@
 
         .tabs .active {
             color: white;
-            border-bottom: 3px solid #00bf8a;
+            /* Changed active border color */
+            border-bottom: 3px solid #1de9b6;
         }
 
         .input-row {
@@ -115,8 +119,9 @@
 
         .input-row button {
             padding: 12px 30px;
-            background-color: #00bf8a;
-            color: white;
+            /* Changed button background color */
+            background-color: #1de9b6;
+            color: #0d47a1; /* Changed text color to match logo */
             border: none;
             border-radius: 3px;
             cursor: pointer;
@@ -170,7 +175,7 @@
 
         .card h4 {
             margin: 0 0 10px 0;
-            color: #092c4c;
+            color: #0d47a1; /* Changed color */
         }
 
         .card p {
@@ -182,7 +187,7 @@
 
         .card a {
             text-decoration: none;
-            color: #092c4c;
+            color: #0d47a1; /* Changed color */
             font-weight: bold;
             font-size: 14px;
         }
@@ -199,221 +204,4 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            gap: 30px;
-        }
-
-        .footer-col {
-            flex: 1;
-            min-width: 150px;
-        }
-
-        .footer-col h4 {
-            color: #092c4c;
-            margin-bottom: 20px;
-            font-size: 16px;
-        }
-
-        .footer-col a {
-            display: block;
-            color: #666;
-            text-decoration: none;
-            margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        .copyright {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
-            color: #999;
-            font-size: 12px;
-        }
-
-
-        
-        @media (max-width: 900px) {
-            .card {
-                
-                width: calc(50% - 20px); 
-            }
-
-            .nav-links a {
-                margin-left: 10px;
-                font-size: 13px;
-            }
-        }
-
-        
-        @media (max-width: 600px) {
-            
-            .card {
-                width: 100%;
-            }
-            
-            .header-inner {
-                flex-direction: column;
-                gap: 15px;
-            }
-            
-            .nav-links {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                width: 100%;
-            }
-
-            .nav-links a, .btn-signin {
-                margin: 0;
-                width: 100%;
-                text-align: center;
-                padding: 8px;
-                display: block;
-            }
-
-            .input-row {
-                flex-direction: column;
-            }
-
-            .input-row button {
-                width: 100%;
-            }
-            
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            /* Footer Stacking */
-            .footer-inner {
-                flex-direction: column;
-                gap: 0;
-            }
-
-            .footer-col {
-                border-bottom: 1px solid #eee;
-                padding-bottom: 15px;
-                margin-bottom: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container header-inner">
-            <a href="#" class="logo">rightmove.</a>
-            
-            <div class="nav-links">
-                <a href="#">Buy</a>
-                <a href="#">Rent</a>
-                <a href="#">House Prices</a>
-                <a href="#">Find Agent</a>
-                <a href="#">Commercial</a>
-                <a href="#">Inspire</a>
-                <a href="signin.html" class="btn-signin">Sign In</a>
-            </div>
-        </div>
-    </header>
-
-    <div class="hero">
-        <div class="container">
-            <h1>
-                <span style="color: #66ff66;">believe in finding it</span><br>
-                with India's largest choice of homes
-            </h1>
-
-            <div class="search-box">
-                <div class="tabs">
-                    <span class="active">Buy</span>
-                    <span>Rent</span>
-                    <span>Sold</span>
-                </div>
-                <div class="input-row">
-                    <input type="text" placeholder="e.g. Bath, NW3">
-                    <button>Search</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="banner">
-        <div class="container">
-            <h3>Sign in to streamline your search</h3>
-            <p>Save properties, create alerts and keep track of the enquiries you send to agents.</p>
-            <a href="signin.html" style="color:#00bf8a; font-weight:bold; text-decoration:none;">Sign in or create an account</a>
-        </div>
-    </div>
-
-    <div class="container card-section">
-        
-        <div class="card">
-            <img src="https://placehold.co/300x150/dbeafe/1e3a8a?text=Home+Valuation" alt="Valuation">
-            <div class="card-body">
-                <h4>Free home valuation</h4>
-                <p>Find out how much your home is worth from an expert.</p>
-                <a href="#">Get a free valuation &rarr;</a>
-            </div>
-        </div>
-
-        
-        <div class="card">
-            <img src="https://placehold.co/300x150/d1fae5/065f46?text=Energy+Tips" alt="Energy">
-            <div class="card-body">
-                <h4>10 mistakes adding costs</h4>
-                <p>Simple changes and tips that could save you money.</p>
-                <a href="#">Take a look &rarr;</a>
-            </div>
-        </div>
-
-
-        <div class="card">
-            <img src="https://placehold.co/300x150/fee2e2/991b1b?text=First+Home" alt="First Home">
-            <div class="card-body">
-                <h4>Buying your first home?</h4>
-                <p>Our Mortgage Toolkit helps you understand affordability.</p>
-                <a href="#">Take a look &rarr;</a>
-            </div>
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="container">
-            <div class="footer-inner">
-                <div class="footer-col">
-                    <h4>Rightmove</h4>
-                    <a href="#">About</a>
-                    <a href="#">Press Centre</a>
-                    <a href="#">Investor Relations</a>
-                    <a href="#">Careers</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Resources</h4>
-                    <a href="#">Stamp Duty</a>
-                    <a href="#">Students</a>
-                    <a href="#">Removals</a>
-                    <a href="#">Property guides</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Professional</h4>
-                    <a href="#">Rightmove Plus</a>
-                    <a href="#">Agents</a>
-                    <a href="#">Developers</a>
-                    <a href="#">Overseas</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <a href="#">Help</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Feedback</a>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2025 Rightmove. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
+            gap:
